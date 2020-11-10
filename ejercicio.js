@@ -13,8 +13,7 @@ var forma = document.getElementById("forma");
 var salidaSuma = document.getElementById("salidaSuma");
 var salidaResta = document.getElementById("salidaResta");
 var salidaMultip = document.getElementById("salidaMultiplicacion");
-var salidaDiv = document.getElementById("salidaDivision");
-
+var salidaDiv = document.getElementById("salidaDivision")
 
 Node.prototype.error = function (mensaje) {
   this.className = "error";
@@ -25,10 +24,7 @@ Node.prototype.info = function (mensaje) {
   this.textContent = mensaje;
 };
 
-
 function procesa() {
-
-
 
   var valor1 = forma["primero"].valueAsNumber ? forma["primero"].valueAsNumber :
     parseDouble(forma["primero"].value);
